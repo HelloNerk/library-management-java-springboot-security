@@ -26,15 +26,6 @@ import static org.springframework.http.HttpStatus.CREATED;
 
 @RestController
 @RequestMapping(value = "/api/v1/books", produces = MediaType.APPLICATION_JSON_VALUE)
-@ApiResponses(value = {
-        @ApiResponse(responseCode = "200", description = "Successful operation"),
-        @ApiResponse(responseCode = "201", description = "Book created"),
-        @ApiResponse(responseCode = "400", description = "Bad request"),
-        @ApiResponse(responseCode = "401", description = "Unauthorized"),
-        @ApiResponse(responseCode = "403", description = "Forbidden"),
-        @ApiResponse(responseCode = "404", description = "Not found"),
-        @ApiResponse(responseCode = "500", description = "Internal server error")
-})
 @Tag(name = "Books", description = "Book Management Endpoints")
 public class BookController {
 
